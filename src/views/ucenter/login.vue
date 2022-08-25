@@ -56,7 +56,7 @@ export default {
       console.log('submit', values)
       const { password, mobile } = values
       this.$http
-        .post('http://47.94.17.15:3000/v1/user/login', { password, mobile })
+        .post('http://10.70.10.139:8080/v1/user/login', { password, mobile })
         .then((res) => {
           // console.log(res)
           if (res.data.code === 0) {
@@ -91,8 +91,8 @@ export default {
 
 <style scoped>
 .logo {
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 </style>
